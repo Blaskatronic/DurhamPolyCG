@@ -1,0 +1,46 @@
+#!/bin/csh
+
+# simple script template for submission of a parallel OpenMPI job
+# using either Myrinet or InfiniBand communication on hamilton
+# please edit the email name below and the executable name on the last line
+
+# use current working directory
+#$ -cwd
+
+# combine standard error and output files
+#$ -j y
+
+# to send email at the beginning (b) and end (e) of the job uncomment the next two lines and
+# fill in the correct email address
+#$ -m be
+#$ -M m.l.jones@durham.ac.uk
+
+# specify project name (currently commented out)
+# only uncomment this if you don't want your default project charged
+##$ -P ITSall
+
+#$ -V
+
+#$ -notify
+
+setenv OMPI_MCA_btl "openib,self,sm"
+setenv OMPI_MCA_pml ob1
+
+# Gridengine allocates the max number of free slots and sets the
+# variable $NSLOTS.
+echo "Got $NSLOTS slots."
+
+# set up the OpenMPI environment for the seleced interconnect by loading the modules
+# modify the openmpi module according to the compiler you have to use
+module purge
+module load dot sge
+module load pgi/current
+module load intel
+module load openmpi/intel/64
+module load lammps
+module load intelmpi/intel/4.1.0
+
+module li
+
+# execute command
+mpirun -n $NSLOTS ./lmp_ham < run.in

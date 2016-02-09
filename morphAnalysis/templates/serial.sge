@@ -1,0 +1,31 @@
+#!/bin/csh
+
+# simple test script for submission of a serial job on hamilton
+# please edit the email name below and the executable name on the last line
+
+# use current working directory
+#$ -cwd
+
+# combine standard error and output files
+#$ -j y
+
+# send email at the beginning (b) and end (e) of the job
+#$ -m be
+# to email address
+#$ -M m.l.jones@durham.ac.uk
+
+# specify project name (currently commented out)
+# only edit this if you don't want your default project charged
+##$ -P ITSall
+
+# request submission to a queue for serial jobs
+#$ -q seq6.q
+
+# execute commands
+module purge
+module load sge
+module load python/2.7.1
+
+module li
+
+./orca dummyFile.inp > dummyFile.out

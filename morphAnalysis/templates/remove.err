@@ -1,0 +1,11 @@
+Currently Loaded Modulefiles:
+  1) blas/gcc/64/1      2) lapack/gcc/3.1.1   3) python/2.7.1
+./orca: Command not found.
+slurm(6):ERROR:105: Unable to locate a modulefile for 'slurm/current'
+slurm(6):ERROR:105: Unable to locate a modulefile for 'slurm/current'
+Currently Loaded Modulefiles:
+  1) blas/gcc/64/1      2) lapack/gcc/3.1.1   3) python/2.7.1
+Currently Loaded Modulefiles:
+  1) blas/gcc/64/1      2) lapack/gcc/3.1.1   3) python/2.7.1
+./orca: Command not found.
+./orca: Command not found.
