@@ -4,7 +4,7 @@ Repository for the coarse-graining and analysis software used to obtain the char
 
 This code was used to generate the data in the following peer-reviewed article, which should be cited if this code is used in any future publications:
 
-Jones, M. L.; Huang, D. M.; Chakrabarti, B.; Groves, C., 2016, ``Relating Molecular Morphology to Charge Mobility in Semicrystalline Conjugated Polymers'', *The Journal of Physical Chemistry C*, **120**, 4240-4250 (10.1021/acs.jpcc.5b11511)
+Jones, M. L.; Huang, D. M.; Chakrabarti, B.; Groves, C., 2016, ``Relating Molecular Morphology to Charge Mobility in Semicrystalline Conjugated Polymers'', *The Journal of Physical Chemistry C*, **120**, 4240-4250 (dx.doi.org/10.1021/acs.jpcc.5b11511)
 
 # Description #
 
