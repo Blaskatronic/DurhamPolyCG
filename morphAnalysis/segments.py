@@ -22,7 +22,7 @@ def getFilesList(direc):
         if (fileName[-4:] == '.dat'):
             datFiles.append(str(fileName))
     popList = []
-    for datNumber in range(len(datFiles)):
+ r  for datNumber in range(len(datFiles)):
         for fileName in fileList:
             addedLammps = 0
             if (datFiles[datNumber][:-4] in fileName) and ('.lammpstrj' in fileName):
