@@ -13,4 +13,4 @@ Of particular note are the morphology characterization scripts (which consider p
 
 # License #
 
-This code is released under GPL 3.0. See LICENSE.txt for more details. Code mostly deprecated (see MorphCT for more details at https://bitbucket.org/cmelab/morphct), but other queries should be directed to the author, Matthew Jones (mattyjones@boisestate.edu)
+This code is released under GPL 3.0. See LICENSE.txt for more details. Code mostly deprecated (superceded by MorphCT, for more details see: https://bitbucket.org/cmelab/morphct), but other queries should be directed to the author, Matthew Jones (mattyl.jones@dunelm.org.uk)
